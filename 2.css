@@ -53,7 +53,7 @@ body{
 
 /* home */
 
-.container_1{
+#container_1{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -116,7 +116,7 @@ body{
 
 /* about me */
 
-.info_1{
+#info_1{
     height: 100px;
     width: 100%;
     display: flex;
@@ -185,37 +185,9 @@ body{
     transform: translateY(-10px);
 }
 
-/* my skills */
-
-.info_2{
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 75px;
-    margin-bottom: 50px;
-}
-
-.container_3{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 600px;
-    width: 1200px;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 130px;
-    border-radius: 50px;
-    border: 2px solid black;
-    box-shadow: 0 0 20px wheat;
-}
-
 /* my projects */
 
-.info_3{
+#info_3{
     height: 100px;
     width: 100%;
     display: flex;
@@ -288,7 +260,7 @@ body{
 
 /* contacts */
 
-.info_4{
+#info_4{
     height: 100px;
     width: 100%;
     display: flex;
@@ -420,6 +392,74 @@ body{
 
 }
 
+/* skills */
+
+#info_2{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.container_3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 600px;
+    width: 1200px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 130px;
+    border-radius: 50px;
+    border: 2px solid black;
+    box-shadow: 0 0 20px wheat;
+}
+
+.skill-item{
+  margin-bottom: 20px;
+}
+.skill-info{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: wheat;
+}
+
+.skill-bar {
+  height: 12px;
+  background:  rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  width: 700px;
+}
+.progress-bar{
+    height: 100%;
+    background: linear-gradient(45deg, black, wheat);
+    border-radius: 8px;
+    width: 0px;
+}
+.html-css{
+  animation: fillHtml 1s ease forwards;
+}
+
+@keyframes fillHtml {
+ 0% {
+  width: 0%;
+ } 100%{
+  width: 90%;
+}
+}
+
+.js { animation: fillJs 1s ease forwards; }
+.git { animation: fillGit 1s ease forwards; }
+.anime { animation: fillAnimation 1s ease forwards; }
 
 
-
+@keyframes fillJs { 0% { width: 0%; } 100% { width: 80%; } }
+@keyframes fillGit { 0% { width: 0%; } 100% { width: 85%; } }
+@keyframes fillAnimation { 0% { width: 0%; } 100% { width: 90%; } }
